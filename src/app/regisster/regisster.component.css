@@ -44,10 +44,17 @@ input{
     list-style-type: none;
     
 }
-ul li{
+.list ul li{
     color: red;
     font-size: x-small;
 }
 ul i{
     color: #000000;
+}
+label{
+	font-size:small;
+    color: blue;
+}
+.cons{
+    position: inherit;
 }
