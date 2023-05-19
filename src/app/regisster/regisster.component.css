@@ -1,0 +1,53 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.content{
+	background-color:green;
+	justify-content: space-between;
+}
+
+.container{
+	background-color:green;
+}
+
+.content i{
+	margin: 0 10px;
+	width: 24px;
+	height: 24px;
+	color:white;
+    font-size: 50px;
+}
+.form-group{
+	margin-right:10px;
+}
+.content .text span{
+    font-weight: 30;
+}
+.form-rounded{
+	border-radius:10rem;
+}
+input{
+    background-color:#ffffff;
+	font:Bold;
+	color:#000000;
+	border-width: thin;
+}
+.listPass{
+   padding: 20px;
+   margin-left: 0;
+}
+
+ ul{
+    padding: 10px;
+    list-style-type: none;
+    
+}
+ul li{
+    color: red;
+    font-size: x-small;
+}
+ul i{
+    color: #000000;
+}
