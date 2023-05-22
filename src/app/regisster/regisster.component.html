@@ -3,13 +3,13 @@
         <h3 class="text-white">Gumawa ng account.<br>Punan ang mga Sumusunod</h3>
     </div>
     <div class="d-flex flex-column icons">
-        <i class="fa fa-arrow-circle-left" ></i>
+      <i class="fa fa-arrow-circle-left" ></i>
     </div>
-</div> -->
+  </div> -->
 
 <div class="d-flex p-3 content">
   <div class="d-flex flex-column text-white text">
-    <h3>Gumawa ng account. <br /><span>Punan ang mga sumusunod</span></h3>
+    <h3>Gumawa ng account. <br /><span>Punan ang mga sumusunod:</span></h3>
   </div>
   <div class="d-flex flex-column">
     <i class="fa fa-arrow-circle-left"></i>
@@ -17,27 +17,30 @@
 </div>
 
 <div class="container-fluid">
-  <form class="form-control-lg formControl">
-    <div class="d-flex align-items-center flex-column p-2">
-      <div class="d-flex flex-column p-3">
-        <label for="pNumber" class="text-primary">MOBILE NUMBER*</label>
-        <input
-          type="number"
-          name="pNumber"
-          id="pNumber"
-          class="form-control form-rounded"
-        />
-        <div class="passWord">
-          <label for="pNumber" class="text-primary">PASSWORD*</label>
+  <form class="form-group formControl">
+    <div class="d-flex align-items-center flex-column">
+      <div class="col-md-3 mt-3">
+        <div class="d-flex flex-column">
+          <label for="pNumber" class="text-primary">MOBILE NUMBER*</label>
           <input
-            type="password"
+            type="number"
             name="pNumber"
             id="pNumber"
             class="form-control form-rounded"
+            placeholder="ex. 0909 876 5432"
           />
+          <div class="passWord">
+            <label for="pNumber" class="text-primary">PASSWORD*</label>
+            <input
+              type="password"
+              name="pNumber"
+              id="pNumber"
+              class="form-control form-rounded"
+              placeholder="Ilagay ang Password"
+            />
+          </div>
         </div>
-
-        <div class="list p-3">
+        <div class="list">
           <ul>
             <li>
               <i class="fa fa-check-circle-o" aria-hidden="true"></i> &nbsp; At
@@ -61,18 +64,17 @@
             </li>
           </ul>
         </div>
-        <div>
-          <label for="confPassWord" class="text-primary"
-            >CONFIRM PASSWORD*</label
-          >
-          <input
-            type="password"
-            name="confPassWord"
-            id="confPassWord"
-            class="form-control form-rounded"
-          />
-        </div>
-        <div>
+
+        <label for="confPassWord" class="text-primary">CONFIRM PASSWORD*</label>
+        <input
+          type="password"
+          name="confPassWord"
+          id="confPassWord"
+          class="form-control form-rounded"
+          placeholder="Ilagay muli ang Password"
+        />
+
+        <div class="mt-2">
           <label for="email" class="text-primary">EMAIL ADDRESS*</label>
           <input
             type="email"
@@ -83,47 +85,222 @@
           />
         </div>
 
-        <div class="d-flex flex-row cons">
-          <div class="d-flex flex-column p-2">
+        <div class="d-flex form-row consc">
+          <div class="d-flex flex-column test mt-3 me-2">
             <label for="designation">DESIGNATION</label>
-            <select class="form-control form-select" id="designation" required>
+            <select
+              class="form-control form-select form-rounded"
+              id="designation"
+              required
+            >
               <option value="" disabled selected hidden>ex. MR.</option>
               <option value="">MR.</option>
               <option value="">MRS.</option>
               <option value="">MR.</option>
             </select>
           </div>
-          <div class="d-flex flex-column p-2">
+          <div class="d-flex flex-column mt-3">
             <label for="firstName">FIRST NAME*</label>
             <input
               type="text"
               name="firstName"
-              class="form-control form-rounded"
+              class="form-control form-rounded text-primary"
+              placeholder="ex. Marco"
             />
           </div>
         </div>
+
+        <div class="d-flex form-row mt-3">
+          <div class="d-flex flex-column col-md-3 me-2">
+            <label for="midIni">M.I</label>
+            <input
+              type="text"
+              placeholder="ex. P"
+              class="form-control form-rounded"
+            />
+          </div>
+          <div class="d-flex flex-column me-2">
+            <label for="lName">LAST NAME*</label>
+            <input
+              type="text"
+              placeholder="ex. delos Santos"
+              class="form-control form-rounded"
+            />
+          </div>
+          <div class="d-flex flex-column">
+            <label for="Suffix">Suffix</label>
+            <select
+              name=""
+              id="suffix"
+              class="form-control form-select form-rounded"
+            >
+              <option value="" disabled selected hidden>ex. Jr</option>
+              <option value="">1</option>
+              <option value="">1</option>
+              <option value="">1</option>
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="d-flex form-row mt-3">
+          <div class="d-flex flex-column me-2">
+            <label for="">MONTH*</label>
+            <select name="" id="" class="form-control form-select form-rounded fs-6">
+              <option value="" disabled selected hidden>ex. October</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <div class="d-flex flex-column me-2">
+            <label class="text-primary dropdate">DAY*</label>
+            <select class="form-control form-select form-rounded fs-6">
+              <option hidden selected disabled>ex 20</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="d-flex flex-column">
+            <label for="" class="text-primary dropdate">YEAR*</label>
+            <select class="form-control form-select form-rounded">
+              <option>ex 2020</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mt-4">
+          <label for="">ADDRESS</label>
+        </div>
+        <div class="d-flex form-row mt-3">
+          <div class="col-lg-12">
+            <label for="">PROVINCE*</label>
+            <select name="" id=""
+            class="form-control form-select form-rounded "
+            >
+            <option value="" disabled selected hidden>ex. Davao del Sur</option>
+            <option value="">1</option>
+            <option value="">1</option>
+            <option value="">1</option>
+            <option value="">1</option>
+            <option value="">1</option>
+
+          </select>
+          <label for="">CITY/MUNICIPALITY*</label>
+          <select name="" id=""
+          class="form-control form-select form-rounded "
+          >
+          <option value="" disabled selected hidden>ex. Digos</option>
+          <option value="">1</option>
+          <option value="">1</option>
+          <option value="">1</option>
+          <option value="">1</option>
+          <option value="">1</option>
+
+        </select>
+        <label for="">BARANGAY*</label>
+        <select name="" id=""
+        class="form-control form-select form-rounded "
+        >
+        <option value="" disabled selected hidden>ex. Balagbag</option>
+        <option value="">1</option>
+        <option value="">1</option>
+        <option value="">1</option>
+        <option value="">1</option>
+        <option value="">1</option>
+
+      </select>
+      
+          </div>
+        </div>
+        <div class="d-flex align-items-start mt-4">
+          <h5 class="text-primary txtAccept">I-CLICK ANG MGA SUMUSNOD NA MGA KAHON &nbsp; KUNG SUMASANG-AYON:</h5>
+        
+          </div>
+          <div class="d-flex flex-column mt-3 text-primary txtSubmit">
+            <div class="d-flex">
+              <div> 
+                <input type="checkbox">
+              </div>
+              <div>
+
+                <p>I understand and consent to Pioneer's Data Collection for purpose of processing this claim &nbsp; 
+                  
+                </p>
+                <p class="txtItalic">
+                  Aking nauunawan at aking binibigyan ng pahintatulot ang Pioneer sa pagkolekta ng impormasyon ukol sa 
+                  aking para sa layunin na ma-process ang aking mga claim
+                </p>
+              </div>
+            </div>
+        </div>
+        <div>
+          <button type="submit" class="form-control form-rounded form-buttom">SUBMIT</button>
+        </div>
       </div>
-
       <!-- <div class=" d-flex flex-row">
-            <div class="d-flex flex-row p-2 ">
-                <div class="d-flex flex-column">
-                    <label for="designation">DESIGNATION</label>
-                    <select class="form-control-lg form-select" id="designation" required>
-                        <option value="" disabled selected hidden>ex. MR.</option>
-                        <option value="">MR.</option>
-                        <option value="">MRS.</option>
-                        <option value="">MR.</option>
-                    </select>
-                </div>
+          <div class="d-flex flex-row p-2 ">
+            <div clas="d-flex flex-column">
+              <label for="designation">DESIGNATION</label>
+              <select class="form-control-lg form-select" id="designation" required>
+                <option value="" disabled selected hidden>ex. MR.</option>
+                <option value="">MR.</option>
+                <option value="">MRS.</option>
+                <option value="">MR.</option>
+              </select>
             </div>
-            <div class="d-flex flex-row">
-                <div class="d-flex      flex-column">
-                    <label for="firstName">FIRST NAME*</label>
-                    <input type="text" name="firstName" id="firstName" class="form-control-lg form-rounded" placeholder="ex. Marco">
-                </div>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="d-flex      flex-column">
+              <label for="firstName">FIRST NAME*</label>
+              <input type="text" name="firstName" id="firstName" class="form-control-lg form-rounded" placeholder="ex. Marco">
             </div>
-
-            </div> -->
+          </div>
+          
+        </div> -->
     </div>
   </form>
 </div>
